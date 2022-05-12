@@ -17,7 +17,7 @@
     <title>PSR Nandanam</title>
 
 
-    <link rel="stylesheet" href="./landing/css/main.min.css">
+    <link rel="stylesheet" href="./landing/css/main.css">
 
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -87,39 +87,34 @@
 
 
     <main>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators d-none">
+        <div id="carouselExampleIndicators" class="carousel slide position-relative" data-bs-ride="carousel">
+            <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                     aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active animate__animated animate__zoomIn">
-                    <img src="./landing/images/shoba-dream/slider/4.png" class="d-block w-100" alt="...">
+                    <img src="./landing/images/shoba-dream/slider/image-4.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item animate__animated animate__zoomIn">
-                    <img src="./landing/images/shoba-dream/slider/2.png" class="d-block w-100" alt="...">
+                    <img src="./landing/images/shoba-dream/slider/image-2.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item animate__animated animate__zoomIn">
-                    <img src="./landing/images/shoba-dream/slider/3.png" class="d-block w-100" alt="...">
+                    <img src="./landing/images/shoba-dream/slider/image-3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item animate__animated animate__zoomIn">
+                    <img src="./landing/images/shoba-dream/slider/image-1.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
 
-        <div id="custom-content" class="d-block d-md-none">
+        <div class="d-block d-md-none">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 ps-0 pe-0">
@@ -127,8 +122,8 @@
                             data-bs-target="#exampleModal">
                             Booking Open
                         </a> -->
-                        <h2 class="text-center text-white bg-danger p-2 text-uppercase">Booking Open</h2>
-                        <h1 class="text-center text-danger text-uppercase">PSR Nandanam</h1>
+                        <h2 class="text-center text-white bg-success p-2 text-uppercase">Booking Open</h2>
+                        <h1 class="text-center text-success text-uppercase">PSR Nandanam</h1>
                         <div class="p-2 text-center">44 residences with 2 duplex villas, Bangalore</div>
                         <div class="bg-dark p-3 text-white">
                             <ul class="list-unstyled text-center">
@@ -156,13 +151,13 @@
             </div>
         </div>
 
-        <div id="desktop-content" class="d-none d-md-block position-relative">
-            <div class="container">
+        <div class="d-none d-md-block position-absolute top-50 start-0 translate-middle-y w-100">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="wraper position-absolute top-50 start-0 translate-middle-y">
-                            <h2 class="text-center text-white bg-danger p-2 text-uppercase">Booking Open</h2>
-                            <h1 class="text-center text-danger text-uppercase">PSR Nandanam</h1>
+                        <div class="wraper bg-white">
+                            <h2 class="text-center text-white bg-success p-2 text-uppercase">Booking Open</h2>
+                            <h1 class="text-center text-success text-uppercase">PSR Nandanam</h1>
                             <div class="p-2 text-center">44 residences with 2 duplex villas,Bangalore</div>
                             <div class="bg-dark p-3 text-white">
                                 <ul class="list-unstyled text-center">
@@ -235,13 +230,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="text-center pt-2 pb-2">Virtual Site Tour</h2>
+                        <h2 class="text-center pt-2 pb-2">PSR Nandanam</h2>
                         <div class="text-center">
                             <!-- <a href="https://www.youtube.com/watch?v=wCJSevSsur8" target="_blank">
                                 <img src="./landing/images/video.png" class="img-fluid">
                             </a> -->
-                            <video width="800" height="600" autoplay muted controls>
-                                <source src="./landing/images/shoba-dream/video/VID-20210813-WA0006.mp4"
+                            <video width="400" height="600" autoplay muted controls>
+                                <source src="./landing/images/shoba-dream/video/video.mp4"
                                     type="video/mp4">
                             </video>
                         </div>
@@ -270,32 +265,61 @@
                     <div class="row">
                         <h2 class="text-center pt-2 pb-2">Floor Plans</h2>
                         <div class="gallery_product-2 col-lg-3 col-md-3 col-sm-6 col-xs-6 filter logo-design">
-                            <a href="./landing/images/shoba-dream/floor-plans/floor-plan-1.png"
+                            <a href="./landing/images/shoba-dream/floor-plans/new/floor-plan-1.png"
                                 data-lightbox="mygallery-2"><img
-                                    src="./landing/images/shoba-dream/floor-plans/floor-plan-1.png"
+                                    src="./landing/images/shoba-dream/floor-plans/new/floor-plan-1.png"
                                     class="img-fluid"></a>
                         </div>
 
                         <div class="gallery_product-2 col-lg-3 col-md-3 col-sm-6 col-xs-6 filter logo-design">
-                            <a href="./landing/images/shoba-dream/floor-plans/floor-plan-2.png"
+                            <a href="./landing/images/shoba-dream/floor-plans/new/floor-plan-2.png"
                                 data-lightbox="mygallery-2"><img
-                                    src="./landing/images/shoba-dream/floor-plans/floor-plan-2.png"
+                                    src="./landing/images/shoba-dream/floor-plans/new/floor-plan-2.png"
                                     class="img-fluid"></a>
                         </div>
 
                         <div class="gallery_product-2 col-lg-3 col-md-3 col-sm-6 col-xs-6 filter logo-design">
-                            <a href="./landing/images/shoba-dream/floor-plans/floor-plan-3.png"
+                            <a href="./landing/images/shoba-dream/floor-plans/new/floor-plan-3.png"
                                 data-lightbox="mygallery-2"><img
-                                    src="./landing/images/shoba-dream/floor-plans/floor-plan-3.png"
+                                    src="./landing/images/shoba-dream/floor-plans/new/floor-plan-3.png"
                                     class="img-fluid"></a>
                         </div>
 
                         <div class="gallery_product-2 col-lg-3 col-md-3 col-sm-6 col-xs-6 filter logo-design">
-                            <a href="./landing/images/shoba-dream/floor-plans/floor-plan-4.png"
+                            <a href="./landing/images/shoba-dream/floor-plans/new/floor-plan-4.png"
                                 data-lightbox="mygallery-2"><img
-                                    src="./landing/images/shoba-dream/floor-plans/floor-plan-4.png"
+                                    src="./landing/images/shoba-dream/floor-plans/new/floor-plan-4.png"
                                     class="img-fluid"></a>
                         </div>
+
+                        <div class="gallery_product-2 col-lg-3 col-md-3 col-sm-6 col-xs-6 filter logo-design">
+                            <a href="./landing/images/shoba-dream/floor-plans/new/floor-plan-5.png"
+                                data-lightbox="mygallery-2"><img
+                                    src="./landing/images/shoba-dream/floor-plans/new/floor-plan-5.png"
+                                    class="img-fluid"></a>
+                        </div>
+
+                        <div class="gallery_product-2 col-lg-3 col-md-3 col-sm-6 col-xs-6 filter logo-design">
+                            <a href="./landing/images/shoba-dream/floor-plans/new/floor-plan-6.png"
+                                data-lightbox="mygallery-2"><img
+                                    src="./landing/images/shoba-dream/floor-plans/new/floor-plan-6.png"
+                                    class="img-fluid"></a>
+                        </div>
+
+                        <div class="gallery_product-2 col-lg-3 col-md-3 col-sm-6 col-xs-6 filter logo-design">
+                            <a href="./landing/images/shoba-dream/floor-plans/new/floor-plan-7.png"
+                                data-lightbox="mygallery-2"><img
+                                    src="./landing/images/shoba-dream/floor-plans/new/floor-plan-7.png"
+                                    class="img-fluid"></a>
+                        </div>
+
+                        <div class="gallery_product-2 col-lg-3 col-md-3 col-sm-6 col-xs-6 filter logo-design">
+                            <a href="./landing/images/shoba-dream/floor-plans/new/floor-plan-8.png"
+                                data-lightbox="mygallery-2"><img
+                                    src="./landing/images/shoba-dream/floor-plans/new/floor-plan-8.png"
+                                    class="img-fluid"></a>
+                        </div>
+                        
                     </div>
                 </div>
             </section>
@@ -315,9 +339,9 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <h3 class="mb-1 text-white bg-dark p-2">2BHK</h3> <br>
-                                                <h2 class="mb-1">Sqft 1007 </h2> <br>
-                                                <h1 class="mb-1 text-danger fs-1">₹ 68 - 70L*</h1><br><button
+                                                <h3 class="mb-1 text-white bg-dark p-2">3.5 BHK</h3> <br>
+                                                <h2 class="mb-1">Sqft 2440 </h2> <br>
+                                                <h1 class="mb-1 text-danger fs-1">₹ 1.4Cr*</h1><br><button
                                                     type="button" class="btn btn-success" data-bs-toggle="modal"
                                                     data-bs-target="#exampleModal">
                                                     Price Breakup
@@ -327,9 +351,9 @@
 
                                         <tr>
                                             <td>
-                                                <h3 class="mb-1 text-white bg-dark p-2">2 BHK Large</h3> <br>
-                                                <h2 class="mb-1">Sqft 1210 </h2> <br>
-                                                <h1 class="mb-1 text-danger fs-1">₹ 82 - 85L*</h1><br><button
+                                                <h3 class="mb-1 text-white bg-dark p-2">5 BHK Large</h3> <br>
+                                                <h2 class="mb-1">Sqft 2865 </h2> <br>
+                                                <h1 class="mb-1 text-danger fs-1">₹ 1.65Cr*</h1><br><button
                                                     type="button" class="btn btn-success" data-bs-toggle="modal"
                                                     data-bs-target="#exampleModal">
                                                     Price Breakup
@@ -405,9 +429,9 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>2 BHK</td>
-                                            <td>1007</td>
-                                            <td>₹ 68 - 70L*</td>
+                                            <td>3.5 BHK</td>
+                                            <td>2440</td>
+                                            <td>₹ 1.4Cr*</td>
                                             <td><button type="button" class="btn btn-success" data-bs-toggle="modal"
                                                     data-bs-target="#exampleModal">
                                                     Price Breakup
@@ -416,9 +440,9 @@
 
 
                                         <tr>
-                                            <td>2 BHK Large</td>
-                                            <td>1210</td>
-                                            <td>₹ 82 - 85L*</td>
+                                            <td>5 BHK Large</td>
+                                            <td>2865</td>
+                                            <td>₹ 1.65Cr*</td>
                                             <td><button type="button" class="btn btn-success" data-bs-toggle="modal"
                                                     data-bs-target="#exampleModal">
                                                     Price Breakup
@@ -626,41 +650,31 @@
                 <div class="container">
                     <div class="row">
                         <h2 class="text-white text-center pt-2 pb-2">Gallery</h2>
-                        <div class="gallery_product-2 col-lg-4 col-md-4 col-sm-4 col-xs-6 filter logo-design">
-                            <a href="./landing/images/shoba-dream/gallery/gallery-7.jpg"
+                        <div class="gallery_product-2 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter logo-design">
+                            <a href="./landing/images/shoba-dream/slider/image-1.jpg"
                                 data-lightbox="mygallery-1"><img
-                                    src="./landing/images/shoba-dream/gallery/gallery-7.jpg" class="img-fluid"></a>
+                                    src="./landing/images/shoba-dream/slider/image-1.jpg" class="img-fluid"></a>
                         </div>
 
-                        <div class="gallery_product-1 col-lg-4 col-md-4 col-sm-4 col-xs-6 filter logo-design">
-                            <a href="./landing/images/shoba-dream/gallery/gallery-8.jpg"
+                        <div class="gallery_product-1 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter logo-design">
+                            <a href="./landing/images/shoba-dream/slider/image-2.jpg"
                                 data-lightbox="mygallery-1"><img
-                                    src="./landing/images/shoba-dream/gallery/gallery-8.jpg" class="img-fluid"></a>
+                                    src="./landing/images/shoba-dream/slider/image-2.jpg" class="img-fluid"></a>
                         </div>
 
-                        <div class="gallery_product-1 col-lg-4 col-md-4 col-sm-4 col-xs-6 filter logo-design">
-                            <a href="./landing/images/shoba-dream/gallery/gallery-9.png"
+                        <div class="gallery_product-1 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter logo-design">
+                            <a href="./landing/images/shoba-dream/slider/image-3.jpg"
                                 data-lightbox="mygallery-1"><img
-                                    src="./landing/images/shoba-dream/gallery/gallery-9.png" class="img-fluid"></a>
+                                    src="./landing/images/shoba-dream/slider/image-3.jpg" class="img-fluid"></a>
                         </div>
 
-                        <div class="gallery_product-1 col-lg-4 col-md-4 col-sm-4 col-xs-6 filter logo-design">
-                            <a href="./landing/images/shoba-dream/gallery/gallery-10.jpg"
+                        <div class="gallery_product-1 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter logo-design">
+                            <a href="./landing/images/shoba-dream/slider/image-4.jpg"
                                 data-lightbox="mygallery-1"><img
-                                    src="./landing/images/shoba-dream/gallery/gallery-10.jpg" class="img-fluid"></a>
+                                    src="./landing/images/shoba-dream/slider/image-4.jpg" class="img-fluid"></a>
                         </div>
 
-                        <div class="gallery_product-1 col-lg-4 col-md-4 col-sm-4 col-xs-6 filter logo-design">
-                            <a href="./landing/images/shoba-dream/gallery/gallery-11.jpg"
-                                data-lightbox="mygallery-1"><img
-                                    src="./landing/images/shoba-dream/gallery/gallery-11.jpg" class="img-fluid"></a>
-                        </div>
-
-                        <div class="gallery_product-1 col-lg-4 col-md-4 col-sm-4 col-xs-6 filter logo-design">
-                            <a href="./landing/images/shoba-dream/gallery/gallery-12.jpg"
-                                data-lightbox="mygallery-1"><img
-                                    src="./landing/images/shoba-dream/gallery/gallery-12.jpg" class="img-fluid"></a>
-                        </div>
+                        
                     </div>
                 </div>
             </section>
@@ -909,7 +923,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
 
-    <script src="./landing/js/main.js"></script>
+    <script src="./landing/js/main.min.js"></script>
 
     <script>
         new WOW().init();
